@@ -7,7 +7,7 @@ app = Flask(__name__)
 def health():
     return jsonify({
         'status': 'healthy',
-        'version': os.getenv('APP_VERSION', '1.0.0'),
+        'version': os.getenv('APP_VERSION', '1.0.1'),
         'region':  os.getenv('AWS_DEFAULT_REGION', 'unknown')
     })
 
